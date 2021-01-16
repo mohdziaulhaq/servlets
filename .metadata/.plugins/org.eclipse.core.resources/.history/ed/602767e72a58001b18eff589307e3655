@@ -1,0 +1,13 @@
+package com.codewithzia.servlets;
+
+import javax.servlet.GenericServlet;
+
+/**
+ * Servlet implementation class WelcomeServlet
+ */
+public class WelcomeServlet extends GenericServlet {
+	private static final long serialVersionUID = 1L;
+	public void service(ServletRequest request, ServletResponse response) throws ServletException, IOException{
+		
+	}
+}
