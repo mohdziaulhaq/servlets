@@ -18,7 +18,7 @@ public class WelcomeServlet extends GenericServlet {
 		PrintWriter out = response.getWriter();
 		out.println("<html>");
 		out.println("<body>");
-		out.println("<h2>Hello World!</h2>");
+		out.println("<h2>Hello Client</h2>");
 		out.println("<hr></body></html>");
 	}
 }
