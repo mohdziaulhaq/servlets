@@ -26,11 +26,10 @@ public class LoginServlet extends HttpServlet {
 		}else {
 			out.println("User Login FAILURE");
 		}
-		out.println("</h2><br><br><h3 style='align='center'>");
-		out.println("<a href='./loginform.html'>");
-		out.println("</html></body></html>");
-		
-		
+		out.println("</h2><br><br><h3 align='center'>");
+		out.println("<a href='./loginform.html'>|Login Form|</a>");
+		out.println("</h3></body></html>");
+				
 	}
 
 }
