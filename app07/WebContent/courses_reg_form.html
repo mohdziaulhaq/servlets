@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Register for Courses</title>
+</head>
+<body>
+<h2 style="color: red;" align="center">Code With Ziya</h2>
+<h3 style="color: blue;" align="center">Student Courses Registration</h3>
+<form method="POST" action="./reg">
+	<table align="center">
+  <tr>
+    <th>Student Name</th>
+    <td> <input type="text" name="sname" /> </td>
+  </tr>
+  <tr>
+	<th>Student Qualification</th> 
+	<td>
+		<input type="checkbox" name="squal" value="BSc"/>BSc
+		<input type="checkbox" name="squal" value="BTech"/>BTech
+		<input type="checkbox" name="squal" value="MCA"/>MBA
+		<input type="checkbox" name="squal" value="MTech"/>MTech
+		<input type="checkbox" name="squal" value="PhD"/>PhD
+	</td>
+  </tr>
+  <tr>
+  	<th>Student Gender</th>
+  	<td>
+  		<input type="radio" name="sgender" value="Male"/>Male
+  		<input type="radio" name="sgender" value="Female"/>Female
+  	</td>
+  </tr>
+  
+  <tr>
+  	<th>Student Courses</th>
+  	<td>
+  		<select name="scourses" size="4" multiple="multiple">
+  			<option value="C">C</option>
+  			<option value="C++">C++</option>
+  			<optgroup label="JAVA">
+  				<option value="Core Java">CORE JAVA</option>
+  				<option value="Adv Java">ADV JAVA</option>
+  				<option value="Hibernate">Hibernate</option>
+  				<option value="Spring">Spring</option>
+  			</optgroup>
+  			
+  			<optgroup label=".NET">
+  				<option value="C#.NET">C#.NET</option>
+  				<option value="ASP.NET">ASP.NET</option>
+  				<option value="MVC">MVC</option>
+  			</optgroup>
+  			<optgroup label="PYTHON">
+  				<option value="Core Python">Core Python</option>
+  				<option value="Adv Python">Adv Python</option>
+  				<option value="DJango">DJango</option>
+  				
+  			</optgroup>
+  		</select>
+  	</td>
+  </tr>
+  
+  <tr>
+  	<th>Branch</th>
+  	<td>
+  		<select name="branch">
+  			<option value="Chennai">Chennai</option>
+  			<option value="Hyderabad">Hyderabad</option>
+  			<option value="Pune">Pune</option> 
+  			<option value="Bangalore">Bangalore</option>
+  		</select>
+  	</td>
+  </tr>
+  
+  <tr>
+  	<th>Student Address</th>
+  	<td>
+  		<textarea name="saddr" rows="5" cols="30"></textarea>
+  	</td>
+  </tr>
+  
+  <tr>
+  	<td></td>
+  	<td><input type="submit" value="Submit"/></td>
+  </tr>
+</table>
+
+</form>
+</body>
+</html>
