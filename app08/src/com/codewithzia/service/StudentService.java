@@ -42,6 +42,19 @@ public class StudentService {
 	}
 	
 	public String updateStudent(Student std) {
-		return "";
+		String status = "";
+		try {
+			int rowCount = st.executeUpdate("update student set SNAME = '"+std.getSname()+"', SADDR = '"+std.getSaddr()+"' where SID = '"+std.getSid()+"'");
+			if(rowCount==1) {
+				status = "success";
+			}else {
+				status = "failure";
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return status;
 	}
 }
